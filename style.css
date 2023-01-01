@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: white
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 100%;
+  float: left;
+}
+
+.logo-img {
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+.container {
+  margin: auto;
+  width: 960px;
+  height: 650px;
+  padding: 5px;
+  text-align: center;
+}
+
+.left {
+  float: left;
+  width: 80%;
+  height: 80%;
+}
+
+.text-input {
+  position: relative;
+  bottom: 150px;
+  float: left;
+  width: 80%;
+  height: 80%;
+  color: #0a3871;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.left-button {
+  float: left;
+  width: 70%;
+  position: relative;
+  bottom: 300px;
+}
+
+.left-button p {
+  position: relative;
+  left: -90px;
+  bottom: 20px;
+}
+
+.right {
+  float: right;
+  width: 35%;
+  height: 80%;
+  text-align: center;
+}
+
+#right-image {
+  position: absolute;
+  top: 140px;
+  right: 100px;
+}
+
+#text-error {
+  position: relative;
+  bottom: 220px;
+}
+
+#encriptado {
+  font-size: 20px;
+  position: relative;
+  bottom: 610px;
+  right: 110px;
+  display: none;
+}
+
+#text-encrypt {
+  float: left;
+  margin-left: 6%;
+  color: #495057;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  bottom: 600px;
+  right: 90px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  display: none;
+}
+
+.text-input::placeholder {
+  color: #0a3871;
+  font-size: 25px;
+}
+
+#btn-encrypt {
+  padding: 15px;
+  width: 20%;
+  margin-right: 10%;
+  background: #0a3871;
+  border-radius: 15px;
+  color: #f3f5fc;
+  font-size: 17px;
+}
+
+#btn-encrypt:hover {
+  color: #0a3871;
+  background-color: #495057a2;
+}
+
+#btn-decrypt {
+  padding: 15px;
+  width: 20%;
+  border-radius: 15px;
+  margin-left: 5%;
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+#btn-decrypt:hover {
+  color: #d8dfe8;
+  background-color: #0a3871;
+}
+
+#copy {
+  margin-left: 33%;
+  margin-top: 90%;
+  padding: 15px;
+  width: 30%;
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 15px;
+  display: none;
+  font-size: 15px;
+  position: relative;
+  bottom: 740px;
+  right: 80px;
+  text-align: center;
+}
+
+#copy:hover {
+  color: #d8dfe8;
+  background-color: #0a3871;
+}
+
+.swal2-styled.swal2-confirm {
+  /*important le da prioridad a este color de background*/
+  background-color: #0a3871 !important;
+  font-size: 15px;
+  border-radius: 50px !important;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .text-input {
+    position: relative;
+    bottom: 180px;
+    right: -110px;
+    float: left;
+  }
+
+  #right-image {
+    display: none;
+  }
+
+  #text-error {
+    position: relative;
+    bottom: 250px;
+    left: -200px;
+    font-size: 20px;
+  }
+
+  #encriptado {
+    position: relative;
+    top: -180px;
+    left: -275px;
+    font-size: 20px;
+  }
+
+  #text-encrypt {
+    position: relative;
+    bottom: 150px;
+    left: -265px;
+    font-size: 20px;
+  }
+
+  .left-button{
+    position: relative;
+    right: -90px;
+    bottom: 300px;
+  }
+
+  #copy {
+    position: relative;
+    top: -200px;
+    left: -265px
+  }
+}
+
+@media (max-width: 575.98px){
+  #right-image {
+    display: none;
+  }
+
+  .text-input {
+    position: relative;
+    bottom: 180px;
+    left: -85px;
+    float: left;
+  }
+
+  #btn-decrypt {
+    position: relative;
+    right: 237px;
+    top: 120px;
+  }
+  
+  #btn-decrypt:hover {
+    color: #d8dfe8;
+    background-color: #0a3871;
+  }
+
+  #text-error {
+    position: relative;
+    bottom: 100px;
+    left: -234px;
+    font-size: 20px;
+  }
+
+  #encriptado {
+    position: relative;
+    top: -150px;
+    left: -235px;
+    font-size: 20px;
+  }
+
+  #text-encrypt {
+    position: relative;
+    bottom: 120px;
+    left: -225px;
+    font-size: 20px;
+  }
+
+  #copy {
+    position: relative;
+    bottom: 100px;
+    left: -250px;
+    padding: 10px 50px;    
+  }
+}
